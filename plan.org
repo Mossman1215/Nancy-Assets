@@ -1,0 +1,45 @@
+#+TODO: TODO IN-PROGRESS DONE
+* architecture
+** SQL
+*** assets
+|----------------+----------------------+------|
+| column name    | type                 | key  |
+|----------------+----------------------+------|
+| id             | integer              | key  |
+| name           | string               |      |
+| serial number  | string               |      |
+| product number | string               |      |
+| purchase price | curency or equvalent |      |
+| purchase date  | date                 |      |
+| userid         | guid                 | fkey |
+|----------------+----------------------+------|
+*** user
+|--------------------+------+---------------|
+| column name        | type | key           |
+|--------------------+------+---------------|
+| userid             | GUID | key component |
+| user email address | text | key component |
+| password hash?     | text |               |
+|                    |      |               |
+** routes
+|--------------------------------------+----------------------------------------|
+| route                                | description                            |
+|--------------------------------------+----------------------------------------|
+| /                                    | main page per user but needs login     |
+| /login                               | route to /login if not logged in       |
+| /register                            | register new account                   |
+| /newitem                             | post to add a new asset (if logged in) |
+| /deleteitem?user=thing&item={itemid} | post to delete an item (if logged in)  |
+| /edititem?user={uid}&item={itemid}   | post (or put?) to edit an item         |
+|--------------------------------------+----------------------------------------|
+* tasks
+** define routes
+*** understand lambda syntax & tidy routes module
+*** DONE non auth main page
+*** non auth new item
+*** non auth delete item - in memory
+*** non auth edit item - in memory
+
+** View templates
+** sqlite testing
+** authenticate
