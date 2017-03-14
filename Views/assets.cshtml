@@ -1,0 +1,38 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<NancyAspNetHostWithRazor1.Models.tableofgoods>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <table>
+    <tr>
+    <th>Purchase Date</th>
+    <th>Product Name</th>
+    <th>Serial Number</th>
+    <th>Product Number</th>
+    <th>Purchase Price</th>
+    </tr>
+        @foreach (var asset in Model.rows) {
+            <tr>
+                <td>
+                    @asset.PurchaseDate
+                </td>
+                <td>
+                    @asset.Name
+                </td>
+                <td>
+                    @asset.SerialNumber
+                </td>
+                <td>
+                    @asset.ProductNumber
+                </td>
+                <td>
+                    @asset.PurchasePrice
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
