@@ -39,7 +39,13 @@
 *** non auth new item
 *** non auth delete item - in memory
 *** non auth edit item - in memory
-
+** authenticate
+*** implement nancy.authentication.forms
+*** use oauth module
+**** make an app on each service
+ - twiter
+ - facebook
+ - google
+**** implement nancy.authentication.worlddomination
 ** View templates
 ** sqlite testing
-** authenticate

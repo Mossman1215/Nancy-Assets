@@ -1,6 +1,6 @@
 ﻿using Nancy;
 using NancyAspNetHostWithRazor1.Models;
-
+using System;
 namespace NancyAspNetHostWithRazor1.Modules {
     public class IndexModule : NancyModule {
         public IndexModule() {
@@ -12,6 +12,7 @@ namespace NancyAspNetHostWithRazor1.Modules {
                 var goods = new tableofgoods();
                 return View["assets", goods];
             };
+			Post ["/"] = newItem;
 			/*alternative syntax
 			Get["/route"] = methodname;
 				public View methodname (Object parameters){
@@ -19,5 +20,9 @@ namespace NancyAspNetHostWithRazor1.Modules {
 				}
 			*/
         }
+		public ViewRenderer newItem(object parameters){
+			string[] arr = Array.Empty<string> (5);
+			return View["/"];
+		}
     }
 }
