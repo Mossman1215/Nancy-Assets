@@ -81,11 +81,19 @@
     <Content Include="Views\names.cshtml" />
     <Content Include="Content\nancy-logo.png" />
     <Content Include="Views\assets.cshtml" />
+    <Content Include="Views\login.cshtml" />
+    <Content Include="Scripts\jquery-1.12.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\billy.cs" />
     <Compile Include="Models\tableofgoods.cs" />
-    <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Models\Asset.cs" />
+    <Compile Include="Modules\PublicModule.cs" />
+    <Compile Include="Modules\PrivateModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.12.4.min.map" />
   </ItemGroup>
 </Project>
