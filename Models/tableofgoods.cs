@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using Mono.Data.Sqlite;
 namespace NancyAspNetHostWithRazor1.Models {
     public class tableofgoods {
         public tableofgoods(){

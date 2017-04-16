@@ -49,3 +49,10 @@
 **** implement nancy.authentication.worlddomination
 ** View templates
 ** sqlite testing
+*** DONE find a way to do sqlite on mono
+*** DONE rewrite tutorial in form of usings
+*** DONE test tutorial that has usings to check it works
+*** list of querys
+*** DONE make a dbfile for assets
+*** integrate fetching models from sql instead of using code defined objects
+*** test existing routes
